@@ -52,5 +52,60 @@
     },
     "engines": {
         "node": ">=18.0.0"
+    },
+    "agentConfig": {
+        "pluginType": "elizaos:client:1.0.0",
+        "pluginParameters": {
+            "HYPERBOLIC_ENV": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_ENV must be either 'production' or 'staging'."
+            },
+            "HYPERBOLIC_API_KEY": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_API_KEY is required"
+            },
+            "HYPERBOLIC_MAX_RETRIES": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_MAX_RETRIES must be a string that can be converted to a number."
+            },
+            "HYPERBOLIC_RETRY_DELAY": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_RETRY_DELAY must be a string that can be converted to a number."
+            },
+            "HYPERBOLIC_TIMEOUT": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_TIMEOUT must be a string that can be converted to a number."
+            },
+            "HYPERBOLIC_GRANULAR_LOG": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_GRANULAR_LOG must be a string that can be converted to a boolean."
+            },
+            "HYPERBOLIC_LOG_LEVEL": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_LOG_LEVEL must be one of 'error', 'warn', 'info', 'debug'."
+            },
+            "SSH_PRIVATE_KEY_PATH": {
+                "type": "string",
+                "minLength": 1,
+                "description": "SSH_PRIVATE_KEY_PATH is optional and must be a valid path to the SSH private key."
+            },
+            "RUNTIME_CHECK_MODE": {
+                "type": "string",
+                "minLength": 1,
+                "description": "RUNTIME_CHECK_MODE must be a string that can be converted to a boolean."
+            },
+            "HYPERBOLIC_SPASH": {
+                "type": "string",
+                "minLength": 1,
+                "description": "HYPERBOLIC_SPASH must be a string that can be converted to a boolean."
+            }
+        }
     }
 }
